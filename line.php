@@ -30,7 +30,7 @@ if ( sizeof($request_array['events']) > 0 )
 		   	$url = 'https://covid19.th-stat.com/api/open/today';
 			$json = file_get_contents($url);
 			$obj = json_decode($json);
-			$reply_message = 'ติดเชื้อสะสมโว้ยยย!!! '. $obj->Confirmed .' คน เสียชีวิต '.$obj->Deaths . ' คน' .' คน รักษาหายแล้ว '.$obj->Recovered . ' คน';
+			$reply_message = 'ผู้ติดเชื้อสะสม '. $obj->Confirmed .' คน เสียชีวิต '.$obj->Deaths . ' คน' .' คน รักษาหายแล้ว '.$obj->Recovered . ' คน';
 	
 	        }	
 	   
